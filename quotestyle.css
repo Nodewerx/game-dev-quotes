@@ -1,0 +1,35 @@
+.bluepost {
+	background: #1a0f08;
+	border:2px solid #000;
+	border-radius:10px;
+	clear: both;
+	margin: 5px 25px 5px 25px;
+	padding: 10px;
+	position: relative;
+}
+.bluepost p {
+	color: #00b4ff;
+	padding: 5px;
+}
+
+.bluepost a:link{ 
+	color: #ffb100;
+}
+
+.torpost {
+	background: #333;
+	border:2px solid #000;
+	border-radius:10px;
+	clear: both;
+	margin: 5px 25px 5px 25px;
+	padding: 10px;
+	position: relative;
+}
+
+.torpost p {
+	color: rgb(249, 214, 72);
+	padding: 5px;
+}
+.torpost a:link{
+	color: #CC9E42;
+}
