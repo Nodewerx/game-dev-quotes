@@ -6,7 +6,7 @@ Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost
 Author URI: http://www.nodewerx.com
 Author: Tony
 Requires at least: 3.6.0
-Tested up to: 3.6.1
+Tested up to: 3.7
 Stable tag: 1.0.0
 Version: 1.0.0
 License: GPLv2 or later
