@@ -2,13 +2,13 @@
 Contributors: Nodewerx
 Plugin Name: Game Dev Quotes
 Plugin URI: http://www.nodewerx.com/game-dev-quotes
-Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost
+Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost, ps2, planetside 2, soe, valve, steam
 Author URI: http://www.nodewerx.com
-Author: Tony
+Author: Tony J. Williams
 Requires at least: 3.6.0
-Tested up to: 3.7
-Stable tag: 1.0.0
-Version: 1.0.0
+Tested up to: 3.8
+Stable tag: 1.1.0
+Version: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,10 +16,15 @@ Simple shortcodes to style game developer quotes as they are on the developers s
 
 == Description ==
 
-Easily style official posts from game companies in a way that resembles their forum posts using shortcodes. For example: Blizzards 'blue posts'.
-Supported formats include Blizzard style posts and Star Wars:The Old Republic/BioWare style posts. The Shortcodes are '[bluepost]' and '[torpost]' respectively.
+Easily style posts from game companies in a way that resembles their forum posts using shortcodes. For example: Blizzards 'blue posts'. The Shortcodes are listed below. If you would like to see a style added please don’t hesitate to contact me and I’ll try to add them in the next releases.
 
-Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]' and '[torpost name="name"] content [/torpost]'
+Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]’.
+
+= Shortcodes Available =
+* ‘bluepost’ - Blizzard style quotes
+* ’torpost’ - Star Wars: The Old Republic style quotes
+* ‘ps2post’ - SOE Planetside 2 style quotes
+* ‘valvepost’ - Valve employee style quotes
 
 == Installation ==
 1. Upload the "Game Dev Quotes" folder to the "/wp-content/plugins" directory.
@@ -32,7 +37,14 @@ Initial Release
 
 == Screenshots ==
 /screenshot.png
+
 == Changelog ==
+
+= 1.1 =
+* Added: Planetside 2 SOE Dev Style
+* Added: Valve Dev Style
+* Fixed: Typos
+* Cleaned Up CSS
 
 = 1.0 =
 * Initial release

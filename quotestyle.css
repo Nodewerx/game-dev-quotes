@@ -12,8 +12,9 @@
 	padding: 5px;
 }
 
-.bluepost a:link{ 
+.bluepost a:link { 
 	color: #ffb100;
+	text-decoration: underline;
 }
 
 .torpost {
@@ -30,6 +31,50 @@
 	color: rgb(249, 214, 72);
 	padding: 5px;
 }
-.torpost a:link{
+.torpost a:link {
 	color: #CC9E42;
+	text-decoration: underline;
+}
+
+.ps2post {
+background: rgba(1, 8, 8, 1);
+border: 2px solid rgb(9,123,133);
+border-radius: 10px;
+color: rgb(255, 255, 255);
+clear: both;
+margin: 5px 25px 5px 25px;
+padding: 10px;
+position: relative;
+}
+
+.ps2post p {
+	color: #fff;
+	padding: 5px;
+}
+
+.ps2post a:link {
+	color: rgb(28, 113, 123);
+	text-decoration: underline;
+}
+
+.valvepost{
+background-color: #262627;
+background-image: url('./imgs/valvebg.png' );
+background-repeat: no-repeat;
+background-position: top left;
+border: 2px solid #45484c;
+border-radius: 10px;
+padding: 10px;
+position: relative;
+margin: 5px 25px 5px 25px;
+}
+
+.valvepost p {
+	color: #fff;
+	padding: 5px;
+}
+
+.valvepost a:link {
+	color: #fff;
+	text-decoration: underline;
 }
