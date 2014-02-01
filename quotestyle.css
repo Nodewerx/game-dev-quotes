@@ -6,6 +6,7 @@
 	margin: 5px 25px 5px 25px;
 	padding: 10px;
 	position: relative;
+	width: 600px;
 }
 .bluepost p {
 	color: #00b4ff;
@@ -25,6 +26,7 @@
 	margin: 5px 25px 5px 25px;
 	padding: 10px;
 	position: relative;
+	width: 600px;
 }
 
 .torpost p {
@@ -45,6 +47,7 @@ clear: both;
 margin: 5px 25px 5px 25px;
 padding: 10px;
 position: relative;
+width: 600px;
 }
 
 .ps2post p {
@@ -67,6 +70,7 @@ border-radius: 10px;
 padding: 10px;
 position: relative;
 margin: 5px 25px 5px 25px;
+width: 600px;
 }
 
 .valvepost p {
