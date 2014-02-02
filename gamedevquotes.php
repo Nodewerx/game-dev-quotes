@@ -4,7 +4,7 @@
     Plugin URI: http://www.nodewerx.com/game-dev-quotes
     Description: Simple shortcodes to style game developer quotes as they are on the developers site 
     Author: Tony
-    Version: 1.1.4 
+    Version: 1.1.5 
     Author URI: http://www.nodewerx.com
     
     */
