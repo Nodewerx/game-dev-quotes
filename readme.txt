@@ -6,9 +6,9 @@ Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost, ps2, planet
 Author URI: http://www.nodewerx.com
 Author: Tony J. Williams
 Requires at least: 3.6.0
-Tested up to: 3.8.1
-Stable tag: 1.1.5
-Version: 1.1.5
+Tested up to: 3.9
+Stable tag: 1.2.0
+Version: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ Initial Release
 /screenshot.png
 
 == Changelog ==
+
+= 1.2.0 =
+*Fixed a bug with some hosting configs.
 
 = 1.1.4 =
 *Now using a different way to get paths. May help with some hosting configurations.
