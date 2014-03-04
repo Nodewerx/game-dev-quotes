@@ -7,8 +7,8 @@ Author URI: http://www.nodewerx.com
 Author: Tony J. Williams
 Requires at least: 3.6.0
 Tested up to: 3.9
-Stable tag: 1.2.0
-Version: 1.2.0
+Stable tag: 1.3.0
+Version: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,8 @@ Simple shortcodes to style game developer quotes as they are on the developers s
 == Description ==
 
 Easily style posts from game companies in a way that resembles their forum posts using shortcodes. For example: Blizzards 'blue posts'. The Shortcodes are listed below. If you would like to see a style added please don’t hesitate to contact me and I’ll try to add them in the next releases.
+
+The icon in the tinyMCE editor is a pair of green quotes("").
 
 Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]’.
 
@@ -29,16 +31,23 @@ Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]’.
 == Installation ==
 1. Upload the "Game Dev Quotes" folder to the "/wp-content/plugins" directory.
 2. Activate the plugin through the "Plugins" menu in WordPress
-3. Use the provided shortcodes for output in your pags/posts/articles. '[bluepost name="name"] content [/bluepost]' or '[torpost name="name"] content [/torpost]'
+3. Use the provided shortcodes for output in your pags/posts/articles. '[bluepost name="name"] content [/bluepost]' or '[torpost name="name"] content [/torpost]'. Or just click on the button in tinyMCE and enter the information to add a quote.
 == Upgrade Notice ==
+
+= 1.3.0 =
+Added support for a tinyMCE button to add styles.
 
 = 1.0 =
 Initial Release
 
 == Screenshots ==
 /screenshot.png
+/screenshot2.png
 
 == Changelog ==
+
+= 1.3.0 =
+* Added tinyMCE button and dialog to insert quotes.
 
 = 1.2.0 =
 *Fixed a bug with some hosting configs.

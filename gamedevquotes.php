@@ -2,9 +2,9 @@
     /* 
     Plugin Name: Game Dev Quotes
     Plugin URI: http://www.nodewerx.com/game-dev-quotes
-    Description: Simple shortcodes to style game developer quotes as they are on the developers site 
+    Description: A simple way to style game developer quotes as they are on the developers site.
     Author: Tony
-    Version: 1.2.0 
+    Version: 1.3.0
     Author URI: http://www.nodewerx.com
     
     */
@@ -45,3 +45,37 @@ function nwxValvepost( $atts, $content = null ){
 }
 
 add_shortcode('valvepost', 'nwxValvepost');
+
+/* Adding support for TinyMCE button */
+/*----------------------------*/
+
+function nwxgdq_register_button( $buttons ) {
+    // inserting a seperator between existing buttons and our new one
+    array_push( $buttons, "|", "nwxgdq_button" );
+    return $buttons;
+}
+
+/* Add our button to tinyMCE */
+/*----------------------*/
+
+function nwxgdq_button() {
+    // Skip if user doesn't have permission
+    if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) ){
+        return;
+    }
+
+    // Add in rich editor mode
+    if ( get_user_option( 'rich_editing' ) == 'true' ) {
+        add_filter( "mce_external_plugins", "add_nwxgdq_plugin" );
+        add_filter( 'mce_buttons', 'nwxgdq_register_button' );
+    }
+}
+
+// init button control
+add_action( 'init', 'nwxgdq_button' );
+
+// adding our button to the bar
+function add_nwxgdq_plugin( $nwxgdq_plugin_array ) {
+    $nwxgdq_plugin_array[ 'nwxgdq_button' ] = plugins_url('nwxgdq_button.js', __FILE__);
+    return $nwxgdq_plugin_array;
+}
