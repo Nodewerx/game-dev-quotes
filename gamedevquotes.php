@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'nwxGameDevQuotesStyles');
 //process our "bluepost" shortcode
 function nwxBluepost( $atts, $content = null ){
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-    return '<div class="bluepost"><span style="color:white; font-weight: bold;">' . $atts['name'] . '</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url('imgs/blizz.gif', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
+    return '<div class="bluepost"><span class="bluepost-src"><a href="' . $atts['url'] . '">' . $atts['name'] . '</a></span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url('imgs/blizz.gif', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('bluepost', 'nwxBluepost');

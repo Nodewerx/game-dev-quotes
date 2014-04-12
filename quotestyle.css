@@ -18,6 +18,12 @@
 	text-decoration: underline;
 }
 
+.bluepost-src a:link {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 .torpost {
 	background: #333;
 	border:2px solid #000;
