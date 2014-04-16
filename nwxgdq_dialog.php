@@ -20,27 +20,28 @@
 
                 // set up variables to contain our input values
                 var type = $('select#nwxgdq_type option:selected').text();
-                var name = $('#button-dialog input#nwxgdq_name').val();
-                var content = $('#button-dialog input#nwxgdq_content').val();
+                //var name = $('#button-dialog input#nwxgdq_name').val();
+	            var name = document.getElementById("nwxgdq_name").value;
+	            var content = document.getElementById("nwxgdq_content").value;
 
                 var output = '';
 
                 // setup the output of our shortcode
                 if( type == 'Blue Post') {
                     output =  '[bluepost ';
-                    output += 'name=' + name + ' ';
+                    output += 'name=\"' + name + '\" ';
                     output += ']' + content + '[/bluepost]';
                 }else if( type == 'ToR Post' ) {
                     output = '[torpost ';
-                    output += 'name=' + name + ' ';
+                    output += 'name=\"' + name + '\" ';
                    output += ']' + content + '[/torpost]';
                 }else if ( type == 'PS2 Post' ) {
                     output = '[ps2post ';
-                    output += 'name=' + name + ' ';
+                    output += 'name=\"' + name + '\" ';
                    output += ']' + content + '[/ps2post]';
                 }else {
                     output =  '[valvepost ';
-                    output += 'name=' + name + ' ';
+                    output += 'name=\"' + name + '\" ';
                     output += ']' + content + '[/valvepost]';
                 }
 

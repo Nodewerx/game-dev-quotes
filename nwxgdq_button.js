@@ -14,7 +14,7 @@
             });
 
             // Register buttons
-            ed.addButton('nwxgdq_button', {title : 'Insert Game Dev Quote', cmd : 'mcebutton', image: url + '/imgs/icon.gif' });
+            ed.addButton('nwxgdq_button', {title : 'Insert Game Dev Quote', cmd : 'mcebutton', image: url+ '/imgs/icon.gif' });
         },
 
         getInfo : function() {
