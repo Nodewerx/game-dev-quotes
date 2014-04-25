@@ -22,26 +22,28 @@
                 var type = $('select#nwxgdq_type option:selected').text();
                 //var name = $('#button-dialog input#nwxgdq_name').val();
 	            var name = document.getElementById("nwxgdq_name").value;
-	            var content = document.getElementById("nwxgdq_content").value;
+                var src = document.getElementById("nwxgdq_src").value;
+                var content = document.getElementById("nwxgdq_content").value;
+
 
                 var output = '';
 
                 // setup the output of our shortcode
                 if( type == 'Blue Post') {
                     output =  '[bluepost ';
-                    output += 'name=\"' + name + '\" ';
+                    output += 'name=\"' + name + '\" url=\"' + src + '\" ';
                     output += ']' + content + '[/bluepost]';
                 }else if( type == 'ToR Post' ) {
                     output = '[torpost ';
-                    output += 'name=\"' + name + '\" ';
+                    output += 'name=\"' + name + '\" url=\"' + src + '\" ';
                    output += ']' + content + '[/torpost]';
                 }else if ( type == 'PS2 Post' ) {
                     output = '[ps2post ';
-                    output += 'name=\"' + name + '\" ';
+                    output += 'name=\"' + name + '\" url=\"' + src + '\" ';
                    output += ']' + content + '[/ps2post]';
                 }else {
                     output =  '[valvepost ';
-                    output += 'name=\"' + name + '\" ';
+                    output += 'name=\"' + name + '\" url=\"' + src + '\" ';
                     output += ']' + content + '[/valvepost]';
                 }
 
@@ -72,6 +74,9 @@
 
             <label for="nwxgdq_name">Name:</label>
             <input type="text" name="nwxgdq_name" value="" id="nwxgdq_name" /><br>
+
+            <label for="nwxgdq_src">Source:</label>
+            <input type="text" name="nwxgdq_src" value="" id="nwxgdq_src" /><br>
 
             <label for="nwxgdq_content">Content:</label>
             <input type="text" name="nwxgdq_content" value="" id="nwxgdq_content" size="75" /><br>

@@ -1,11 +1,11 @@
 <?php   
     /* 
     Plugin Name: Game Dev Quotes
-    Plugin URI: http://www.nodewerx.com/game-dev-quotes
+    Plugin URI: http://www.tonyw.io/game-dev-quotes
     Description: A simple way to style game developer quotes as they are on the developers site.
-    Author: Tony
-    Version: 1.3.0
-    Author URI: http://www.nodewerx.com
+    Author: TonyW
+    Version: 1.4.0
+    Author URI: http://www.tonyw.io
     
     */
 
@@ -19,29 +19,49 @@ function nwxGameDevQuotesStyles(){
 add_action( 'wp_enqueue_scripts', 'nwxGameDevQuotesStyles');
 //process our "bluepost" shortcode
 function nwxBluepost( $atts, $content = null ){
+    if ( $atts['url'] != "" ) {
+        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
+    }else {
+        $nwxgdqsrc = "";
+    }
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-    return '<div class="bluepost"><span class="bluepost-src">' . $atts['name'] . ' (<a href="' . $atts['url'] . '">src</a>)</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url('imgs/blizz.gif', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
+    return '<div class="bluepost"><span style="color: #ffffff; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url('imgs/blizz.gif', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('bluepost', 'nwxBluepost');
 
 function nwxTorpost( $atts, $content = null ){
+    if ( $atts['url'] != "" ) {
+        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
+    }else {
+        $nwxgdqsrc = "";
+    }
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-    return '<div class="torpost"><span style="color:white; font-weight: bold;">' . $atts['name'] . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/tordev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
+    return '<div class="torpost"><span style="color:white; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/tordev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('torpost', 'nwxTorpost');
 
 function nwxPs2post( $atts, $content = null ){
+    if ( $atts['url'] != "" ) {
+        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
+    }else {
+        $nwxgdqsrc = "";
+    }
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-    return '<div class="ps2post"><span style="color:red; font-weight: bold;">' . $atts['name'] . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/ps2dev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
+    return '<div class="ps2post"><span style="color:red; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/ps2dev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('ps2post', 'nwxPs2post');
 
 function nwxValvepost( $atts, $content = null ){
+    if ( $atts['url'] != "" ) {
+        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
+    }else {
+        $nwxgdqsrc = "";
+    }
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-    return '<div class="valvepost"><span style="color: #aedd08; font-weight: bold;">' . $atts['name'] . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/valvedev.png', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
+    return '<div class="valvepost"><span style="color: #aedd08; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/valvedev.png', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('valvepost', 'nwxValvepost');
