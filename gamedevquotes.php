@@ -17,49 +17,81 @@ function nwxGameDevQuotesStyles(){
 }
 
 add_action( 'wp_enqueue_scripts', 'nwxGameDevQuotesStyles');
+
 //process our "bluepost" shortcode
 function nwxBluepost( $atts, $content = null ){
+
+    // Check for source URL. If filled out insert correct code, if not leave source link out.
     if ( $atts['url'] != "" ) {
-        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
-    }else {
+
+        $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+
+    } else {
+
         $nwxgdqsrc = "";
+
     }
+
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
     return '<div class="bluepost"><span style="color: #ffffff; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url('imgs/blizz.gif', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('bluepost', 'nwxBluepost');
 
+// Process our "torpost" shortcode
 function nwxTorpost( $atts, $content = null ){
+
+    // Check for source URL. If filled out insert correct code, if not leave source link out.
     if ( $atts['url'] != "" ) {
-        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
-    }else {
+
+        $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+
+    } else {
+
         $nwxgdqsrc = "";
+
     }
+
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
     return '<div class="torpost"><span style="color:white; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/tordev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('torpost', 'nwxTorpost');
 
+//Process our "ps2post" shortcode
 function nwxPs2post( $atts, $content = null ){
+
+    // Check for source URL. If filled out insert correct code, if not leave source link out.
     if ( $atts['url'] != "" ) {
-        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
-    }else {
+
+        $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+
+    } else {
+
         $nwxgdqsrc = "";
+
     }
+
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
     return '<div class="ps2post"><span style="color:red; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/ps2dev.png', __FILE__) . '"></span> <p> ' . $content . '</p></div>';
 }
 
 add_shortcode('ps2post', 'nwxPs2post');
 
+//Process our "valvepost" shortcode
 function nwxValvepost( $atts, $content = null ){
+
+    // Check for source URL. If filled out insert correct code, if not leave source link out.
     if ( $atts['url'] != "" ) {
-        $nwxgdqsrc = ' (<a href="' . $atts['url'] . '">source</a>)';
-    }else {
+
+        $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+
+    } else {
+
         $nwxgdqsrc = "";
+
     }
+
     // Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
     return '<div class="valvepost"><span style="color: #aedd08; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url('imgs/valvedev.png', __FILE__) .'"></span> <p> ' . $content . '</p></div>';
 }

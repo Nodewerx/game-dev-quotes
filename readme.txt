@@ -7,8 +7,8 @@ Author URI: http://www.tonyw.io
 Author: Tony J. Williams
 Requires at least: 3.6.0
 Tested up to: 3.9
-Stable tag: 1.4.0
-Version: 1.4.0
+Stable tag: 1.4.1
+Version: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]’.
 2. Activate the plugin through the "Plugins" menu in WordPress
 3. Use the provided shortcodes for output in your pags/posts/articles. '[bluepost name="name"] content [/bluepost]' or '[torpost name="name"] content [/torpost]'. Or just click on the button in tinyMCE and enter the information to add a quote.
 == Upgrade Notice ==
+
+= 1.4.1 =
+Added support for source links. The will appear next to the name of the poster
 
 = 1.3.0 =
 Added support for a tinyMCE button to add styles
