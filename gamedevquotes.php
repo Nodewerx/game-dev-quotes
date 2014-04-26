@@ -4,7 +4,7 @@
     Plugin URI: http://www.tonyw.io/game-dev-quotes
     Description: A simple way to style game developer quotes as they are on the developers site.
     Author: TonyW
-    Version: 1.4.0
+    Version: 1.4.1
     Author URI: http://www.tonyw.io
     
     */
@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', 'nwxGameDevQuotesStyles');
 function nwxBluepost( $atts, $content = null ){
 
     // Check for source URL. If filled out insert correct code, if not leave source link out.
-    if ( $atts['url'] != "" ) {
+    if ( isset( $atts['url'] ) && $atts['url'] != "" ) {
 
         $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 
@@ -42,7 +42,7 @@ add_shortcode('bluepost', 'nwxBluepost');
 function nwxTorpost( $atts, $content = null ){
 
     // Check for source URL. If filled out insert correct code, if not leave source link out.
-    if ( $atts['url'] != "" ) {
+    if ( isset( $atts['url'] ) && $atts['url'] != "" ) {
 
         $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 
@@ -62,7 +62,7 @@ add_shortcode('torpost', 'nwxTorpost');
 function nwxPs2post( $atts, $content = null ){
 
     // Check for source URL. If filled out insert correct code, if not leave source link out.
-    if ( $atts['url'] != "" ) {
+    if ( isset( $atts['url'] ) && $atts['url'] != "" ) {
 
         $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 
@@ -82,7 +82,7 @@ add_shortcode('ps2post', 'nwxPs2post');
 function nwxValvepost( $atts, $content = null ){
 
     // Check for source URL. If filled out insert correct code, if not leave source link out.
-    if ( $atts['url'] != "" ) {
+    if ( isset( $atts['url'] ) && $atts['url'] != "" ) {
 
         $nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 

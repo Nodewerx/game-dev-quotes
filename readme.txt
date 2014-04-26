@@ -4,7 +4,7 @@ Plugin Name: Game Dev Quotes
 Plugin URI: http://www.tonyw.io/game-dev-quotes
 Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost, ps2, planetside 2, soe, valve, steam
 Author URI: http://www.tonyw.io
-Author: Tony J. Williams
+Author: TonyW
 Requires at least: 3.6.0
 Tested up to: 3.9
 Stable tag: 1.4.1
