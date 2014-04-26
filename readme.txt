@@ -35,7 +35,7 @@ Syntax for shortcodes are: '[bluepost name="name"] content [/bluepost]’.
 == Upgrade Notice ==
 
 = 1.4.1 =
-Added support for source links. The will appear next to the name of the poster
+Added support for source links. The will appear next to the name of the poster. Also made quote boxes responsive.
 
 = 1.3.0 =
 Added support for a tinyMCE button to add styles
