@@ -114,7 +114,7 @@ function gdq_aa_post( $atts, $content = null ){
 	}
 
 	// Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-	return '<div class="aapost"><span style="color: #4d6c32; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; width:40px; height:40px;"><img src=" ' . plugins_url( 'imgs/aalogo.png', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
+	return '<div class="aapost"><span style="color: #4d6c32; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; width:30px; height:30px;"><img src=" ' . plugins_url( 'imgs/aalogo.png', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
 
 }
 
