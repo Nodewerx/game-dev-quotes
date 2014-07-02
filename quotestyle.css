@@ -85,3 +85,23 @@
     color: #fff;
     text-decoration: underline;
 }
+
+.aapost {
+	background-color: #ACCE78;
+	border: 2px solid #45484c;
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+	margin: 5px 25px 5px 25px;
+	max-width: 600px;
+}
+
+.aapost p {
+	color: #4E4E4E;
+	padding: 5px;
+}
+
+.aapost a:link {
+	color: #fff;
+	text-decoration: underline;
+}

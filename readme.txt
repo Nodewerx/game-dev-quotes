@@ -6,9 +6,9 @@ Tags: Blizzard, BioWare, WoW, Tor, game dev, game support, bluepost, ps2, planet
 Author URI: http://www.tonyw.io
 Author: TonyW
 Requires at least: 3.6.0
-Tested up to: 3.9
-Stable tag: 1.4.1
-Version: 1.4.1
+Tested up to: 3.9.2
+Stable tag: 1.5.0
+Version: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,12 @@ Initial Release
 2. Menu Icon
 
 == Changelog ==
+
+= 1.5.0 =
+* Added: ArchAge support.
+
+= 1.4.1 =
+* Added support for source links.
 
 = 1.3.0 =
 * Added tinyMCE button and dialog to insert quotes.

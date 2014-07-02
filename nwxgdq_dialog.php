@@ -41,6 +41,10 @@
                     output = '[ps2post ';
                     output += 'name=\"' + name + '\" url=\"' + src + '\" ';
                    output += ']' + content + '[/ps2post]';
+                }else if ( type == 'ArcheAge Post' ) {
+	                output = '[aapost ';
+	                output += 'name=\"' + name + '\" url=\"' + src + '\" ';
+	                output += ']' + content + '[/aapost]';
                 }else {
                     output =  '[valvepost ';
                     output += 'name=\"' + name + '\" url=\"' + src + '\" ';
@@ -66,7 +70,7 @@
 
             <label for="nwxgdq_type">Type:</label>
             <select id="nwxgdq_type" name="nwxgdq_type">
-            <?php $nwxgdq_types = array('Blue Post', 'ToR Post', 'PS2 Post', 'Valve Post' );
+            <?php $nwxgdq_types = array('Blue Post', 'ToR Post', 'PS2 Post', 'Valve Post', 'ArcheAge Post' );
                 foreach ( $nwxgdq_types as $types ) {
                     echo '<option value="' . $types . '">' . $types . '</option>';
                 }?>
