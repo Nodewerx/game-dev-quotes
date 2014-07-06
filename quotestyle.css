@@ -104,4 +104,5 @@
 .aapost a:link {
 	color: #fff;
 	text-decoration: underline;
+    border-bottom: none;
 }
