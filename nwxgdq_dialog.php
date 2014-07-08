@@ -6,8 +6,8 @@
 <head>
     <title>Insert Game Dev Quote</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
-    <script language="javascript" type="text/javascript" src="../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
-    <style type="text/css" src="../../wp-includes/js/tinymce/themes/advanced/skins/wp_theme/dialog.css"></style>
+    <script language="javascript" type="text/javascript" src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+    <style type="text/css" src="../../../wp-includes/js/tinymce/themes/advanced/skins/wp_theme/dialog.css"></style>
     <script type="text/javascript">
 
         var nwxgdq_button_dlog = {

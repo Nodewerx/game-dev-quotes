@@ -106,3 +106,7 @@
 	text-decoration: underline;
     border-bottom: none;
 }
+
+.aapost span a:link {
+    font-weight: normal;
+}

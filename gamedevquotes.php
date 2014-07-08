@@ -4,7 +4,7 @@ Plugin Name: Game Dev Quotes
 Plugin URI: http://www.tonyw.io/game-dev-quotes
 Description: A simple way to style game developer quotes as they are on the developers site.
 Author: TonyW
-Version: 1.5.0
+Version: 1.5.2
 Author URI: http://www.tonyw.io
 
 */
@@ -114,7 +114,7 @@ function gdq_aa_post( $atts, $content = null ){
 	}
 
 	// Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-	return '<div class="aapost"><span style="color: #FFF; font-weight: bold; padding-right: 30px; border-bottom: 1px solid #15911D; padding-bottom: 2px;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; width:30px; height:30px;"><img src=" ' . plugins_url( 'imgs/aalogo.png', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
+	return '<div class="aapost"><span style="color: #FFF; font-weight: bold; padding-right: 30px; border-bottom: 1px solid #15911D; padding-bottom: 2px;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:2px; right:2px; width:35px; height:35px;"><img src=" ' . plugins_url( 'imgs/aalogo.png', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
 
 }
 
