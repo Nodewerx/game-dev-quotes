@@ -21,8 +21,8 @@
             return {
                 longname : 'Game Dev Quotes Button',
                 author : 'Tony Williams',
-                authorurl : 'http://www.nodewerx.com',
-                infourl : 'http://www.nodewerx.com',
+                authorurl : 'http://www.tonyw.io',
+                infourl : 'http://www.tonyw.io/game-dev-quotes',
                 version : tinymce.majorVersion + "." + tinymce.minorVersion
             };
         }
