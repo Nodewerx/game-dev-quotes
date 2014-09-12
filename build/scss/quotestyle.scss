@@ -1,0 +1,139 @@
+.bluepost {
+
+  background: #1a0f08;
+  border: 2px solid #000;
+  border-radius: 10px;
+  clear: both;
+  color: #ffffff;
+  margin: 5px 25px 5px 25px;
+  padding: 10px;
+  position: relative;
+  max-width: 600px;
+
+  & p {
+
+    color: #00b4ff;
+    padding: 5px;
+
+  }
+
+  & a:link {
+
+    color: #ffb100;
+    text-decoration: underline;
+
+  }
+}
+
+
+.torpost {
+
+  background: #333;
+  border: 2px solid #000;
+  border-radius: 10px;
+  clear: both;
+  margin: 5px 25px 5px 25px;
+  padding: 10px;
+  position: relative;
+  max-width: 600px;
+
+  & p {
+
+    color: rgb(249, 214, 72);
+    padding: 5px;
+
+  }
+
+  & a:link {
+
+    color: #CC9E42;
+    text-decoration: underline;
+
+  }
+}
+
+.ps2post {
+
+  background: rgba(1, 8, 8, 1);
+  border: 2px solid rgb(9, 123, 133);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  clear: both;
+  margin: 5px 25px 5px 25px;
+  padding: 10px;
+  position: relative;
+  max-width: 600px;
+
+  & p {
+
+    color: #fff;
+    padding: 5px;
+
+  }
+
+  & a:link {
+
+    color: rgb(28, 113, 123);
+    text-decoration: underline;
+
+  }
+}
+
+.valvepost {
+
+  background-color: #262627;
+  background-image: url('./imgs/valvebg.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  border: 2px solid #45484c;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  margin: 5px 25px 5px 25px;
+  max-width: 600px;
+
+  & p {
+
+    color: #fff;
+    padding: 5px;
+
+  }
+
+  & a:link {
+
+    color: #fff;
+    text-decoration: underline;
+
+  }
+}
+
+.aapost {
+
+  background-color: #303030;
+  border: 2px solid #4d6c32;
+  padding: 10px;
+  position: relative;
+  margin: 5px 25px 5px 25px;
+  max-width: 600px;
+
+  & p {
+
+    color: #15911D;
+    padding: 5px;
+
+  }
+
+  & a:link {
+
+    color: #fff;
+    text-decoration: underline;
+    border-bottom: none;
+
+  }
+
+  & span a:link {
+
+    font-weight: normal;
+
+  }
+}
