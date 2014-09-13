@@ -24,7 +24,11 @@ function nwxBluepost( $atts, $content = null ){
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		} else {
+			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		}
 
 	} else {
 
@@ -44,8 +48,11 @@ function nwxTorpost( $atts, $content = null ){
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
-
+		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		} else {
+			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		}
 	} else {
 
 		$nwxgdqsrc = '';
@@ -64,7 +71,11 @@ function nwxPs2post( $atts, $content = null ){
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		} else {
+			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		}
 
 	} else {
 
@@ -84,7 +95,11 @@ function nwxValvepost( $atts, $content = null ){
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		} else {
+			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		}
 
 	} else {
 
@@ -105,7 +120,11 @@ function gdq_aa_post( $atts, $content = null ){
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
+		} else {
+			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
+		}
 
 	} else {
 
