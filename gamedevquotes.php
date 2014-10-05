@@ -10,8 +10,8 @@ Author URI: http://www.tonyw.io
 */
 
 // Bring in our styles from "quotestyle.css" so everything gets formatted correctly.
-function nwxgdq_styles(){
-	wp_register_style( 'game-dev-quotes-css',  plugins_url( 'assets/css/quotestyle.min.css', __FILE__ ) );
+function nwxgdq_styles() {
+	wp_register_style( 'game-dev-quotes-css', plugins_url( 'assets/css/quotestyle.min.css', __FILE__ ) );
 
 	wp_enqueue_style( 'game-dev-quotes-css', plugins_url( 'assets/css/quotestyle.min.css', __FILE__ ) );
 }
@@ -19,12 +19,12 @@ function nwxgdq_styles(){
 add_action( 'wp_enqueue_scripts', 'nwxgdq_styles' );
 
 //process our "bluepost" shortcode
-function nwxBluepost( $atts, $content = null ){
+function nwx_blue_post( $atts, $content = null ) {
 
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+		if ( substr( $atts['url'], 0, 4 ) == 'http' ) {
 			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
@@ -37,18 +37,18 @@ function nwxBluepost( $atts, $content = null ){
 	}
 
 	// Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-	return '<div class="bluepost"><span style="color: #ffffff; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url( 'assets/img/blizz.gif', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
+	return '<div class="bluepost"><span style="color: #ffffff; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0; "><img src=" ' . plugins_url( 'assets/img/blizz.gif', __FILE__ ) . '"></span> <p> ' . $content . '</p></div>';
 }
 
-add_shortcode( 'bluepost', 'nwxBluepost' );
+add_shortcode( 'bluepost', 'nwx_blue_post' );
 
 // Process our "torpost" shortcode
-function nwxTorpost( $atts, $content = null ){
+function nwx_tor_post( $atts, $content = null ) {
 
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+		if ( substr( $atts['url'], 0, 4 ) == 'http' ) {
 			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
@@ -63,15 +63,15 @@ function nwxTorpost( $atts, $content = null ){
 	return '<div class="torpost"><span style="color:white; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url( 'assets/img/tordev.png', __FILE__ ) . '"></span> <p> ' . $content . '</p></div>';
 }
 
-add_shortcode( 'torpost', 'nwxTorpost' );
+add_shortcode( 'torpost', 'nwx_tor_post' );
 
 //Process our "ps2post" shortcode
-function nwxPs2post( $atts, $content = null ){
+function nwx_ps2_post( $atts, $content = null ) {
 
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+		if ( substr( $atts['url'], 0, 4 ) == 'http' ) {
 			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
@@ -87,15 +87,15 @@ function nwxPs2post( $atts, $content = null ){
 	return '<div class="ps2post"><span style="color:red; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url( 'assets/img/ps2dev.png', __FILE__ ) . '"></span> <p> ' . $content . '</p></div>';
 }
 
-add_shortcode( 'ps2post', 'nwxPs2post' );
+add_shortcode( 'ps2post', 'nwx_ps2_post' );
 
 //Process our "valvepost" shortcode
-function nwxValvepost( $atts, $content = null ){
+function nwx_valve_post( $atts, $content = null ) {
 
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+		if ( substr( $atts['url'], 0, 4 ) == 'http' ) {
 			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
@@ -108,19 +108,19 @@ function nwxValvepost( $atts, $content = null ){
 	}
 
 	// Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-	return '<div class="valvepost"><span style="color: #aedd08; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url( 'assets/img/valvedev.png', __FILE__ ) .'"></span> <p> ' . $content . '</p></div>';
+	return '<div class="valvepost"><span style="color: #aedd08; font-weight: bold;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:0; right:0;"><img src=" ' . plugins_url( 'assets/img/valvedev.png', __FILE__ ) . '"></span> <p> ' . $content . '</p></div>';
 }
 
-add_shortcode( 'valvepost', 'nwxValvepost' );
+add_shortcode( 'valvepost', 'nwx_valve_post' );
 
 //Process our "aapost" shortcode
-function gdq_aa_post( $atts, $content = null ){
+function gdq_aa_post( $atts, $content = null ) {
 
 
 	// Check for source URL. If filled out insert correct code, if not leave source link out.
 	if ( isset( $atts['url'] ) && $atts['url'] != '' ) {
 
-		if ( substr( $atts['url'], 0, 4 ) == 'http' )  {
+		if ( substr( $atts['url'], 0, 4 ) == 'http' ) {
 			$nwxgdqsrc = ' - (<a href="' . $atts['url'] . '">source</a>)';
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
@@ -133,7 +133,7 @@ function gdq_aa_post( $atts, $content = null ){
 	}
 
 	// Wrap everything in the colors we want. Pull out the "Name" attributed to the post and the content then display it.
-	return '<div class="aapost"><span style="color: #FFF; font-weight: bold; padding-right: 30px; border-bottom: 1px solid #15911D; padding-bottom: 2px;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:2px; right:2px; width:35px; height:35px;"><img src=" ' . plugins_url( 'assets/img/aalogo.png', __FILE__ ) .'"></span> <p> ' . $content . ' </p></div>';
+	return '<div class="aapost"><span style="color: #FFF; font-weight: bold; padding-right: 30px; border-bottom: 1px solid #15911D; padding-bottom: 2px;">' . $atts['name'] . $nwxgdqsrc . '</span><span style="position: absolute; top:2px; right:2px; width:35px; height:35px;"><img src=" ' . plugins_url( 'assets/img/aalogo.png', __FILE__ ) . '"></span> <p> ' . $content . ' </p></div>';
 
 }
 
