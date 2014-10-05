@@ -4,7 +4,7 @@
             // Register commands
             ed.addCommand('mcebutton', function() {
                 ed.windowManager.open({
-                    file : url+ '/nwxgdq_dialog.php', // file that contains HTML for our modal window
+                    file : plugins_url+ '/game-dev-quotes/inc/nwxgdq-dialog.php', // file that contains HTML for our modal window
                     width : 500 + parseInt(ed.getLang('button.delta_width', 0)), // size of our window
                     height : 300 + parseInt(ed.getLang('button.delta_height', 0)), // size of our window
                     inline : 1
@@ -14,15 +14,15 @@
             });
 
             // Register buttons
-            ed.addButton('nwxgdq_button', {title : 'Insert Game Dev Quote', cmd : 'mcebutton', image: url+ '/imgs/icon.gif' });
+            ed.addButton('nwxgdq_button', {title : 'Insert Game Dev Quote', cmd : 'mcebutton', image: plugins_url+ '/game-dev-quotes/assets/img/icon.png' });
         },
 
         getInfo : function() {
             return {
                 longname : 'Game Dev Quotes Button',
                 author : 'Tony Williams',
-                authorurl : 'http://www.nodewerx.com',
-                infourl : 'http://www.nodewerx.com',
+                authorurl : 'http://www.tonyw.io',
+                infourl : 'http://www.tonyw.io/game-dev-quotes',
                 version : tinymce.majorVersion + "." + tinymce.minorVersion
             };
         }
