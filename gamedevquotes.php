@@ -29,7 +29,6 @@ function nwx_blue_post( $atts, $content = null ) {
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
 		}
-
 	} else {
 
 		$nwxgdqsrc = '';
@@ -76,7 +75,6 @@ function nwx_ps2_post( $atts, $content = null ) {
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
 		}
-
 	} else {
 
 		$nwxgdqsrc = '';
@@ -100,7 +98,6 @@ function nwx_valve_post( $atts, $content = null ) {
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
 		}
-
 	} else {
 
 		$nwxgdqsrc = '';
@@ -125,7 +122,6 @@ function gdq_aa_post( $atts, $content = null ) {
 		} else {
 			$nwxgdqsrc = ' - (<a href="http://' . $atts['url'] . '">source</a>)';
 		}
-
 	} else {
 
 		$nwxgdqsrc = '';
@@ -170,7 +166,7 @@ add_action( 'init', 'nwxgdq_button' );
 // adding our button to the bar
 function add_nwxgdq_plugin( $nwxgdq_plugin_array ) { ?>
 <script type="text/javascript">
-	var plugins_url = '<?php echo plugins_url(); ?>';
+	var plugins_url = '<?php echo esc_html( plugins_url() ); ?>';
 </script>
 	<?php
 	$nwxgdq_plugin_array[ 'nwxgdq_button' ] = plugins_url( 'assets/js/nwxgdq_button.min.js', __FILE__ );
