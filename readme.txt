@@ -7,7 +7,7 @@ Author URI: http://www.tonyw.io
 Author: TonyW
 Requires at least: 3.6.0
 Tested up to: 4.0
-Stable tag: 1.5.2
+Stable tag: 1.6.0
 Version: 1.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

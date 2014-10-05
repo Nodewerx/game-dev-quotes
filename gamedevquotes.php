@@ -165,9 +165,9 @@ add_action( 'init', 'nwxgdq_button' );
 
 // adding our button to the bar
 function add_nwxgdq_plugin( $nwxgdq_plugin_array ) { ?>
-<script type="text/javascript">
-	var plugins_url = '<?php echo esc_html( plugins_url() ); ?>';
-</script>
+	<script type="text/javascript">
+		var plugins_url = '<?php echo esc_html( plugins_url() ); ?>';
+	</script>
 	<?php
 	$nwxgdq_plugin_array[ 'nwxgdq_button' ] = plugins_url( 'assets/js/nwxgdq_button.min.js', __FILE__ );
 	return $nwxgdq_plugin_array;
